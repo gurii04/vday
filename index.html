@@ -2,11 +2,7 @@
 <html lang="en">
 <head> 
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .btn {
-            position: absolute; /* Adding this line */
-        }
-    </style>
+
 </head>
 <body>
     <div class="container">
@@ -18,13 +14,13 @@
             <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXJjcmxuYWw5NWR1M3Vqemh2ZXZmNm8yOTE4aW9pNWlxdXJiYzN0NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TbGhYgv40vpr1saQIs/giphy.gif">
         </div>
         <div class="buttons">
-            <button class="btn" id="yesButton" onclick="nextPage()">YES</button>
-            <button class="btn" id="noButton" onmouseover="moveButton()">NO</button>
+            <button class="btn" id="yesButton" onclick="nextPage('yes.html')">YES</button>
+            <button class="btn" id="noButton" onclick="nextPage('no.html')" onmouseover="moveButton()">NO</button>
         </div>
     </div>
     <script>
-        function nextPage() {
-            window.location.href = "yes.html";      
+        function nextPage(url) {
+            window.location.href = url;      
         }   
 
         function moveButton() {
