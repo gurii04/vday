@@ -6,16 +6,17 @@ body {
     background-color: rgb(189, 225, 122);
 }
 
-#nobutton {
+#noButton {
     position: absolute;
     margin-left: 150px;
     transition: 0.5s;
 }
 
-#yesbutton {
+#yesButton {
     position: absolute;
     margin-right: 150px;
 }
+
 
 .header_text {
    font-family: 'nunito';
